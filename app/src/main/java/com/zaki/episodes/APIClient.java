@@ -11,7 +11,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 class APIClient {
 
-    private static final String SERVER_URL = "http://10.0.3.2/";
+    private static final String SERVER_URL = "http://animeonline.club/";
+    //private static final String SERVER_URL = "http://10.0.3.2";
     private static Retrofit retrofit = null;
 
     static Retrofit getClient() {
@@ -19,7 +20,6 @@ class APIClient {
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
-
 
         retrofit = new Retrofit.Builder()
                 .baseUrl(SERVER_URL)

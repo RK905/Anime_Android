@@ -1,36 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:scrollbars="vertical"
     tools:context="com.zaki.episodes.MainActivity">
 
-    <LinearLayout
-        android:id="@+id/topLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:padding="20dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
-
-        <TextView
-            android:id="@+id/txtDesc"
-            android:layout_width="368dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Episodes"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="0dp" />
-    </LinearLayout>
 
     <ListView
         android:id="@+id/lvEpisodes"
         android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/topLayout"
-        tools:layout_editor_absoluteX="8dp" />
+        android:layout_height="485dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
 </android.support.constraint.ConstraintLayout>
